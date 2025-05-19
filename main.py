@@ -69,22 +69,23 @@ def main():
         print("Quit? Enter q\n")
         choice = input("Enter your choice:")
             # TODO: Use if/elif conditional statements to check the user's choice.
-        choice = choice.upper()
-        if choice == 'Q':
-            break
+        if choice in ['1', '2', '3', '4', 'q']:      
             # TODO: If the choice is in the list of valid choices, call the appropriate function.
             # TODO: Pass in the checking_account and savings_account objects.
-        elif choice == '1':
-            handle_deposit(checking_account, savings_account)
-        elif choice == '2':
-            handle_withdrawal(checking_account, savings_account)
-        elif choice == '3':
-            handle_transfer(checking_account, savings_account)
-        elif choice == '4':
-            balances(checking_account, savings_account)   
+           if choice == '1':
+               handle_deposit(checking_account, savings_account)
+           elif choice == '2':
+               handle_withdrawal(checking_account, savings_account)
+           elif choice == '3':
+               handle_transfer(checking_account, savings_account)
+           elif choice == '4':
+               balances(checking_account, savings_account)   
+           elif choice == 'q':
+               break   
         # TODO: If the user enters an invalid choice, print a message.
         else:
             print("Invalid choice. Please enter 1, 2, 3, 4, or q.\n")
+
 
 if __name__ == "__main__":
     main()

@@ -1,6 +1,7 @@
 """ This module contains the abstract base class for a bank account. """
 from abc import ABC, abstractmethod
 
+
 class BankAccount(ABC):
     """
     Abstract base class representing a bank account.

@@ -1,5 +1,4 @@
 """This function handles the deposit process for the user."""
-
 # TODO: Build out the handle_deposit function
 # TODO: Pass in the checking account and savings account objects.
 def handle_deposit(checking, savings):
